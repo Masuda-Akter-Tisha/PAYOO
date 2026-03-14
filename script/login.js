@@ -20,5 +20,6 @@ document.getElementById ('login-btn').addEventListener ('click', function () {
     else {
         //3.2 false :::>> alert > return
         alert ('login failed');
+        return;
     }
 })

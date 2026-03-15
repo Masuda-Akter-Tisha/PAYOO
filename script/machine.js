@@ -15,3 +15,9 @@ function getBalance () {
     console.log('current balance is :', Number(balance));
     return Number(balance);
 }
+
+// machine -> set balance
+function setBalance (value) {
+    const balanceElement = document.getElementById ('balance');
+    balanceElement.innerText = value;
+}

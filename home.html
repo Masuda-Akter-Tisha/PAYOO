@@ -65,7 +65,7 @@
                 <img src="./assets/opt-3.png" alt="">
                 <p>Send Money</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly ('get-bonus')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
@@ -152,9 +152,34 @@
     </div>
     </section>
 
+    <section id="add-money" class="w-11/12 mx-auto py-4">
+        <h2 class="text-xl text-nutral font-semibold pb-4">Pay Bill</h2>
+       <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
+       <div class="card-body">
+        <fieldset class="fieldset text-xl">
+          <label class="label mb-2 text-neutral/70 font-medium">Select To Pay</label>
+          <select id="pay-bill-bank" class="select w-full rounded-full text-neutral/60 text-lg bg-base-200 border-none mb-2">
+             <option disabled selected>Select bank</option>
+             <option value="DBBL">DBBL</option>
+             <option value="IBBL">IBBL</option>
+             <option value="City Bank">City Bank</option>
+          </select>
+          <label class="label mb-2 text-neutral/70 font-medium">Biller Account Number</label>
+          <input id="pay-bill-account" type="number" class="input rounded-full bg-base-200 text-lg mb-2 border-none w-full" placeholder="Enter 11 digit account number"/>
+          <label class="label mb-2 text-neutral/70 font-medium">Amount to Pay</label>
+          <input id="pay-bill-amount" type="number" class="input rounded-full bg-base-200 text-lg mb-2 border-none w-full" placeholder="Add Amount to Pay"/>
+          <label class="label mb-2 text-neutral/70 font-medium">Pin Number</label>
+          <input id="pay-bill-pin" maxlength="4" type="password" class="input rounded-full bg-base-200 text-lg border-none w-full" placeholder="Enter 4 digit pin number" />
+          <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
     <script src="./script/machine.js"></script>
     <script src="./script/add-money.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/send-money.js"></script>
     <script src="./script/get-bonus.js"></script>
+    <script src="./script/pay-bill.js"></script>
 </body>

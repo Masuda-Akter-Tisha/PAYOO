@@ -122,7 +122,25 @@
     </div>
     </section>
 
+    <section id="send-money" class="w-11/12 mx-auto py-4">
+        <h2 class="text-xl text-nutral font-semibold pb-4">Send Money</h2>
+         <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
+      <div class="card-body">
+        <fieldset class="fieldset text-xl">
+          <label class="label mb-2 text-neutral/70 font-medium">User Account Number</label>
+          <input id="send-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 text-lg mb-2 border-none w-full" placeholder="Enter 11 digit number"/>
+          <label class="label mb-2 text-neutral/70 font-medium">Amount</label>
+          <input id="send-money-amount" type="number" class="input rounded-full bg-base-200 text-lg mb-2 border-none w-full" placeholder="Enter amount to transfer"/>
+          <label class="label mb-2 text-neutral/70 font-medium">Pin Number</label>
+          <input id="send-money-pin" maxlength="4" type="password" class="input rounded-full bg-base-200 text-lg border-none w-full" placeholder="Enter 4 digit pin number" />
+          <button id="send-money-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
     <script src="./script/machine.js"></script>
     <script src="./script/add-money.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/send-money.js"></script>
 </body>

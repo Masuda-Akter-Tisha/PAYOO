@@ -26,11 +26,13 @@ function setBalance (value) {
 function showOnly (id) {
     const addMoney = document.getElementById ('add-money');
     const cashout = document.getElementById ('cashout');
+    const sendMoney = document.getElementById ('send-money')
     // console.log (`Add-Money: ${addMoney},CashOut: ${cashout}`);
 
     // hide all section
     addMoney.classList.add ('hidden');
     cashout.classList.add ('hidden');
+    sendMoney.classList.add ('hidden');
 
     // id oala element ta k tmi show koro
     const selected = document.getElementById (id);

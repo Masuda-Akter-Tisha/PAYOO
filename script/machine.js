@@ -35,6 +35,4 @@ function showOnly (id) {
     // id oala element ta k tmi show koro
     const selected = document.getElementById (id);
     selected.classList.remove ('hidden');
-
-    console.log (id);
 }

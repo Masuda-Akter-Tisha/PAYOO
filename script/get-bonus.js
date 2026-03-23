@@ -8,6 +8,18 @@ document.getElementById ('get-bonus-btn').addEventListener ('click', function ()
         alert (`Congratulations!
 You get the bonus.`);
              setBalance (newBalance);
+             // history container k dhore niye ashte hube
+        const historyContainer = document.getElementById ('history-container');
+        //create a new div
+        const newHistory = document.createElement ('div');
+        //add innerHtml in a new div
+        newHistory.innerHTML = `
+        <div class="transaction-card bg-base-100 p-5 rounded-3xl shadow-sm">
+        Congratulations!You get the bonus. at ${new Date()},Your bonus tk is: ${getBonus}.
+        </div>
+        `
+        // history container ar moddhe new div k append kore dibu
+        historyContainer.appendChild (newHistory);
     }
     else {
         alert ('Invalid Coupon Number');

@@ -28,6 +28,8 @@ function showOnly (id) {
     const cashout = document.getElementById ('cashout');
     const sendMoney = document.getElementById ('send-money');
     const getBonus = document.getElementById ('get-bonus');
+    const payBill = document.getElementById ('pay-bill');
+    const history = document.getElementById ('history');
     // console.log (`Add-Money: ${addMoney},CashOut: ${cashout}`);
 
     // hide all section
@@ -35,6 +37,8 @@ function showOnly (id) {
     cashout.classList.add ('hidden');
     sendMoney.classList.add ('hidden');
     getBonus.classList.add ('hidden');
+    payBill.classList.add ('hidden');
+    history.classList.add ('hidden');
 
     // id oala element ta k tmi show koro
     const selected = document.getElementById (id);

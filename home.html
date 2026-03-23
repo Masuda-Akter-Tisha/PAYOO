@@ -69,11 +69,11 @@
                 <img src="./assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly ('pay-bill')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly ('history')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -81,7 +81,7 @@
     </section>
    </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-4">
+    <section id="add-money" class="w-11/12 mx-auto py-4 hidden">
         <h2 class="text-xl text-nutral font-semibold pb-4">Add Money</h2>
        <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
        <div class="card-body">
@@ -105,7 +105,7 @@
     </div>
     </section>
 
-    <section id="cashout" class="w-11/12 mx-auto py-4">
+    <section id="cashout" class="w-11/12 mx-auto py-4 hidden">
         <h2 class="text-xl text-nutral font-semibold pb-4">Cash Out</h2>
          <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
       <div class="card-body">
@@ -122,7 +122,7 @@
     </div>
     </section>
 
-    <section id="send-money" class="w-11/12 mx-auto py-4">
+    <section id="send-money" class="w-11/12 mx-auto py-4 hidden">
         <h2 class="text-xl text-nutral font-semibold pb-4">Send Money</h2>
          <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
       <div class="card-body">
@@ -139,7 +139,7 @@
     </div>
     </section>
 
-    <section id="get-bonus" class="w-11/12 mx-auto py-4">
+    <section id="get-bonus" class="w-11/12 mx-auto py-4 hidden">
         <h2 class="text-xl text-nutral font-semibold pb-4">Get Bonus</h2>
          <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
       <div class="card-body">
@@ -152,7 +152,7 @@
     </div>
     </section>
 
-    <section id="add-money" class="w-11/12 mx-auto py-4">
+    <section id="pay-bill" class="w-11/12 mx-auto py-4 hidden">
         <h2 class="text-xl text-nutral font-semibold pb-4">Pay Bill</h2>
        <div class="card bg-base-100 w-full shadow-xl mx-auto rounded-3xl">
        <div class="card-body">
@@ -174,6 +174,15 @@
         </fieldset>
       </div>
     </div>
+    </section>
+
+    <section id="history" class="w-11/12 mx-auto py-4 hidden">
+      <h2 class="text-xl text-nutral font-semibold">Transaction History</h2>
+      <div id="history-container" class="space-y-5">
+        <div class="transection-card bg-base-200 p-5">
+
+        </div>
+      </div>
     </section>
 
     <script src="./script/machine.js"></script>
